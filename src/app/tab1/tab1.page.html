@@ -1,0 +1,730 @@
+<ion-header>
+   <ion-toolbar class="navbarsec">
+      <ion-buttons slot="start">
+         <ion-menu-button class="menu-btn" ></ion-menu-button>
+      </ion-buttons>
+      <ion-title routerLink="/" ><img src="assets/icon/hglogom.png"></ion-title>
+      <ion-buttons routerLink="/search" slot="end" >
+         <img class="img-head-icon"  src="assets/icon/search.png">
+      </ion-buttons>
+      <!--  <ion-buttons routerLink="/cart" slot="end" >
+         <img  class="img-head-icon" src="assets/icon/cart.png">
+         </ion-buttons> -->
+      <ion-buttons routerLink="/cart" slot="end" >
+         <img class="img-head-icon"  src="assets/icon/filter.png">
+      </ion-buttons>
+   </ion-toolbar>
+</ion-header>
+<ion-content>
+   <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+         <img src="assets/icon/s2.jpg" height="350">
+      </ion-slide>
+      <ion-slide>
+         <img src="assets/icon/s1.jpg" height="350">
+      </ion-slide>
+      <ion-slide>
+         <img src="assets/icon/s3.jpg" height="350">
+      </ion-slide>
+   </ion-slides>
+   <ion-toolbar class="title-sec">
+      <ion-buttons slot="start">
+         <h2 class="head-text" >FEATURED PRODUCTS</h2>
+      </ion-buttons>
+      <ion-buttons slot="end">
+         <ion-button class="view-all" > VIEW ALL </ion-button>
+      </ion-buttons>
+   </ion-toolbar>
+   <ion-slides [options]="sliderConfig2" class="bg-white trending-sec" >
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+   </ion-slides>
+
+
+
+
+   <ion-toolbar class="title-sec">
+      <ion-buttons slot="start">
+         <h2 class="head-text" > NEW ARRIVALS  </h2>
+      </ion-buttons>
+      <ion-buttons slot="end">
+         <ion-button class="view-all" > VIEW ALL </ion-button>
+      </ion-buttons>
+   </ion-toolbar>
+   <ion-slides [options]="sliderConfig2" class="bg-white trending-sec" >
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+   </ion-slides>
+
+
+
+
+
+
+   <ion-toolbar class="title-sec">
+      <ion-buttons slot="start">
+         <h2 class="head-text" > HOME  </h2>
+      </ion-buttons>
+      <ion-buttons slot="end">
+         <ion-button class="view-all" > VIEW ALL </ion-button>
+      </ion-buttons>
+   </ion-toolbar>
+   <ion-slides [options]="sliderConfig2" class="bg-white trending-sec" >
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+   </ion-slides>
+
+
+   <ion-toolbar class="title-sec">
+      <ion-buttons slot="start">
+         <h2 class="head-text" >KITCHEN APPLIANCES </h2>
+      </ion-buttons>
+      <ion-buttons slot="end">
+         <ion-button class="view-all" > VIEW ALL </ion-button>
+      </ion-buttons>
+   </ion-toolbar>
+   <ion-slides [options]="sliderConfig2" class="bg-white trending-sec" >
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="assets/icon/men.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+      <ion-slide   >
+         <ion-card (click)="cartDetails()" >
+            <span class="heartsec">
+               <ion-icon name="heart-empty"></ion-icon>
+            </span>
+            <img src="http://www.homeglare.com/storage/products/d3f76d0ea8a307026ce386c8a712ca19.jpg">
+            <ion-card-header>
+               <ion-card-title>Men,s Shirt</ion-card-title>
+               <ion-card-subtitle>Rs. 400 
+               </ion-card-subtitle>
+               <div class="addtobtn">
+                  <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+               </div>
+            </ion-card-header>
+         </ion-card>
+      </ion-slide>
+   </ion-slides>
+</ion-content>

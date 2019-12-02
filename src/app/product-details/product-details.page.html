@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons class="white"  slot="start">
+      <ion-back-button   defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="white">Product Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-fab horizontal="end"  slot="fixed" edge>
+            <ion-fab-button>
+              <ion-icon name="share"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-list>
+              <ion-fab-button color="danger">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </ion-fab-button>
+              <ion-fab-button color="danger">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </ion-fab-button>
+              <ion-fab-button color="danger">
+                <ion-icon name="logo-vimeo"></ion-icon>
+              </ion-fab-button>
+            </ion-fab-list>
+          </ion-fab>
+
+ <ion-slides style=" box-shadow: 0px 15px 10px -15px #11111194;" pager="true" [options]="slideOpts">
+      <ion-slide>
+
+          <div class="productdetailsimg">
+            <img src="assets/icon/men.jpg">
+          </div>
+      </ion-slide>
+      <ion-slide>
+          <div class="productdetailsimg">
+            <img src="assets/icon/men.jpg">
+          </div>
+      </ion-slide>
+      <ion-slide>
+          <div class="productdetailsimg">
+            <img src="assets/icon/men.jpg">
+          </div>
+      </ion-slide>
+      
+    </ion-slides>
+
+
+
+
+
+
+
+<div class="wishlisttext1">
+      <h6>Men's Shirt</h6>
+      <button class="wishlistbtn">4.3<ion-icon color="light" name="star"></ion-icon></button>
+       <h6>Rs. 4000  <small><del>5000</del></small> </h6>
+     
+     </div>
+
+    <div class="btncartbuy mb-3">
+                 <ion-button class="addremove" shape="round"  size="small">
+                   <ion-icon name="add"></ion-icon> <ion-input value="0" ></ion-input> <ion-icon name="remove"></ion-icon>
+
+                  </ion-button>
+                   <ion-button shape="round"  size="small">
+                     <small> + Add to Cart</small>
+                  </ion-button>
+                   <ion-button shape="round"  size="small">
+                     <ion-icon slot="start" name="heart"></ion-icon>
+                  </ion-button>
+
+                 <!--   <ion-item>
+      <ion-label position="floating">Floating Label</ion-label>
+      <ion-input></ion-input>
+      <ion-icon name="eye" slot="end"></ion-icon>
+    </ion-item> -->
+         
+
+</div>
+
+</ion-content>
+
