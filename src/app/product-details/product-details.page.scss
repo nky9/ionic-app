@@ -5,22 +5,7 @@
 .footer-secbtn{ position: fixed;bottom:0px; }
     .btncartbuy{ text-align: center;margin: auto; }
 
-/*
-    .wishlisttext1 h6{ font-size: 17px; font-weight: 600; }
-.wishlisttext1 p{ font-size: 15px; margin: 5px 0; }
-.wishlistbtn{ background-color: #008d84; color: #fff; }
-.wishlisttext1 ul{ padding: 0  0 0 20px  }
-.wishlisttext1 ul li{ font-size: 13px; }
-.wishlisttext2 ion-icon { font-size: 20px; margin-top: 30px; }
 
-.wish_head p{ margin: 15px 10px;
-    font-size: 18px; }
-.wish_head span{     position: absolute;
-    right: 10px;
-    font-weight: 300;
-    font-size: 15px; }
-
-*/
 .wishlisttext1 small {  font-size: 14px; color: blue; }
 .wishlisttext1 h6{ font-size: 21px;  }
 
@@ -54,4 +39,70 @@
 }
 .swiper-pagination-bullet {
     --background: #000!important;
+}
+
+
+
+
+
+
+
+
+
+nav > .nav.nav-tabs{
+
+  border: none;
+    color:#fff;
+   /*// background:#272e38;*/
+    border-radius:0;
+
+}
+/*nav > div a.nav-item.nav-link,*/
+nav > div a.nav-item.nav-link.active
+{
+  border: none;
+   
+    color:#fff;
+    background:#000000b5;
+    border-radius:0;
+}
+
+nav > div a.nav-item.nav-link.active:after
+ {
+  /*content: "";
+  position: relative;
+  bottom: -40px;
+  left: -10%;
+  border: 7px solid transparent;
+  border-top-color: #000033 ;*/
+}
+.tab-content{
+  background: #fdfdfd;
+   
+    border: 1px solid #ddd;
+    border-top:2px solid #000033;
+    /*border-bottom:5px solid #000033;*/
+    /*padding:30px 25px;*/
+}
+.nav-link {
+    display: block;
+    padding: 0rem 1rem;
+    font-size: 13px;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    /*background: #000033;*/
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+
+
+
+
+.checked {
+  color: orange;
 }

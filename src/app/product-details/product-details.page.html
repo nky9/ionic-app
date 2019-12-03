@@ -1,83 +1,149 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons class="white"  slot="start">
-      <ion-back-button   defaultHref="/"></ion-back-button>
-    </ion-buttons>
-    <ion-title class="white">Product Details</ion-title>
-  </ion-toolbar>
+   <ion-toolbar>
+      <ion-buttons class="white"  slot="start">
+         <ion-back-button   defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="white">Product Details</ion-title>
+   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-<ion-fab horizontal="end"  slot="fixed" edge>
-            <ion-fab-button>
-              <ion-icon name="share"></ion-icon>
-            </ion-fab-button>
-            <ion-fab-list>
-              <ion-fab-button color="danger">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </ion-fab-button>
-              <ion-fab-button color="danger">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </ion-fab-button>
-              <ion-fab-button color="danger">
-                <ion-icon name="logo-vimeo"></ion-icon>
-              </ion-fab-button>
-            </ion-fab-list>
-          </ion-fab>
-
- <ion-slides style=" box-shadow: 0px 15px 10px -15px #11111194;" pager="true" [options]="slideOpts">
+   <ion-fab horizontal="end"  slot="fixed" edge>
+      <ion-fab-button>
+         <ion-icon name="share"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list>
+         <ion-fab-button color="danger">
+            <ion-icon name="logo-facebook"></ion-icon>
+         </ion-fab-button>
+         <ion-fab-button color="danger">
+            <ion-icon name="logo-twitter"></ion-icon>
+         </ion-fab-button>
+         <ion-fab-button color="danger">
+            <ion-icon name="logo-vimeo"></ion-icon>
+         </ion-fab-button>
+      </ion-fab-list>
+   </ion-fab>
+   <ion-slides style=" box-shadow: 0px 15px 10px -15px #11111194;" pager="true" [options]="slideOpts">
       <ion-slide>
-
-          <div class="productdetailsimg">
+         <div class="productdetailsimg">
             <img src="assets/icon/men.jpg">
-          </div>
+         </div>
       </ion-slide>
       <ion-slide>
-          <div class="productdetailsimg">
+         <div class="productdetailsimg">
             <img src="assets/icon/men.jpg">
-          </div>
+         </div>
       </ion-slide>
       <ion-slide>
-          <div class="productdetailsimg">
+         <div class="productdetailsimg">
             <img src="assets/icon/men.jpg">
-          </div>
+         </div>
       </ion-slide>
-      
-    </ion-slides>
+   </ion-slides>
 
 
-
-
-
-
-
-<div class="wishlisttext1">
+   <div class="wishlisttext1">
       <h6>Men's Shirt</h6>
-      <button class="wishlistbtn">4.3<ion-icon color="light" name="star"></ion-icon></button>
-       <h6>Rs. 4000  <small><del>5000</del></small> </h6>
-     
-     </div>
+      <div>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star"></span>
+                                 <span class="fa fa-star"></span>
+                                 <span>&nbsp;&nbsp;<b>4.5</b></span>
 
-    <div class="btncartbuy mb-3">
-                 <ion-button class="addremove" shape="round"  size="small">
-                   <ion-icon name="add"></ion-icon> <ion-input value="0" ></ion-input> <ion-icon name="remove"></ion-icon>
+                              </div>
+      <h6>Rs. 4000  <small><del>5000</del></small> </h6>
+   </div>
 
-                  </ion-button>
-                   <ion-button shape="round"  size="small">
-                     <small> + Add to Cart</small>
-                  </ion-button>
-                   <ion-button shape="round"  size="small">
-                     <ion-icon slot="start" name="heart"></ion-icon>
-                  </ion-button>
 
-                 <!--   <ion-item>
-      <ion-label position="floating">Floating Label</ion-label>
-      <ion-input></ion-input>
-      <ion-icon name="eye" slot="end"></ion-icon>
-    </ion-item> -->
-         
+   <div class="btncartbuy my-4">
+      <ion-button class="addremove" shape="round"  size="small">
+         <ion-icon name="add"></ion-icon>
+         <ion-input value="0" ></ion-input>
+         <ion-icon name="remove"></ion-icon>
+      </ion-button>
+      <ion-button shape="round"  size="small">
+         <small> + Add to Cart</small>
+      </ion-button>
+      <ion-button shape="round"  size="small">
+         <ion-icon slot="start" name="heart"></ion-icon>
+      </ion-button>
 
-</div>
+   </div>
+
+
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 ">
+
+            <nav>
+               <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Description</a>
+                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                  Reviews
+                  </a>
+               </div>
+            </nav>
+
+            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+
+               <div class="tab-pane fade show active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                 <p>Here Write Product Description .</p>
+               </div>
+
+               <div class="tab-pane fade " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <div class=" dec-review-bottom">
+                     <div class="row">
+                        <div class="review-sec" style="width: 100% ; padding: 25px; border:1px solid #eee; ">
+                           <h3>Write a review</h3>
+                           <form id="form-review">
+                              <input type="text" name="product_id" hidden="" value="88">
+                              <div class="form-group">
+                                 <label for="exampleFormControlInput1">Your Name </label>
+                                 <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="">
+                              </div>
+                              <div class="form-group">
+                                 <label for="exampleFormControlInput1">Email address</label>
+                                 <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
+                              </div>
+                              <div class="form-group">
+                                 <label for="exampleFormControlTextarea1">Share your opinion</label>
+                                 <textarea class="form-control" name="review" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                              <div>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star"></span>
+                                 <span class="fa fa-star"></span>
+                              </div>
+                              <ion-button shape="round"  size="small">
+                                 <small>Submit</small>
+                              </ion-button>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+            </div>
+
+
+         </div>
+      </div>
+   </div>
 
 </ion-content>
 
+
+
+
+
+
+      <!--   <ion-item>
+         <ion-label position="floating">Floating Label</ion-label>
+         <ion-input></ion-input>
+         <ion-icon name="eye" slot="end"></ion-icon>
+         </ion-item> -->
